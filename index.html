@@ -10,9 +10,13 @@
 <body>
     <div class="header">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="Google Logo">
-        <input type="text" placeholder="Search Google...">
-        <button>Google Search</button>
-        <button>I'm Feeling Lucky</button>
+        <div class="search-container">
+            <input id="search-input" type="text" placeholder="Search Google...">
+            <button onclick="search()">Google Search</button>
+            <button onclick="lucky()">I'm Feeling Lucky</button>
+        </div>
+        <button id="mode-switch" onclick="toggleDarkMode()">Dark Mode</button>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
